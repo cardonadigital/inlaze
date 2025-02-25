@@ -1,0 +1,38 @@
+# Dependencias de Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Cachés del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Salidas de compilación
+dist/
+build/
+.out/
+
+# Configuración del editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Archivos de cobertura de pruebas
+coverage/
+.nyc_output/
+
+# Archivos de bases de datos locales
+*.sqlite
+*.sqlite3
