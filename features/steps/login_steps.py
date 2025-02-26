@@ -26,11 +26,17 @@ def step_enter_password(context, password):
 def step_click_login(context):
     context.login_page.click_login()
 
-@then("the user should be redirected to the dashboard")
-def step_verify_dashboard(context):
-    time.sleep(2)  # Wait for page load
-    assert "Dashboard" in context.driver.title
-    context.driver.quit()
+@then(u'the user should see his name:"{text}" in the page')
+def step_impl(self, text):
+    driver = DriverManager.get_driver(self)
+    time.sleep(3) 
+    # Esperar hasta que el elemento sea visible (máx. 10 segundos)
+    element = WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located((By.XPATH, f"(//h2[contains(text(), '{text}')])[last()]"))
+    )
+
+    # Hacer el assert
+    assert element.is_displayed(), "El elemento no está visible"
 
 
 @then(u'the user should see an alert with the text: "{text}"')
