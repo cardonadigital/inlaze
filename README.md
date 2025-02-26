@@ -201,4 +201,6 @@ class LoginPage(BasePage):
 - link casos de prueba: https://www.notion.so/Reto-automatizaci-n-inlaze-ebf81068e30146f3bb5317dd9460bd02?pvs=4
 - video resumen proyecto: https://youtu.be/SVgGKlJbvI8
 
+## **📝 Notas Adicionales**
+- debido al corto tiempo el proyecto requiere de refactorización
 
