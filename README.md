@@ -150,9 +150,22 @@ behave --tags=@smoke
 ### **Ejecutar un escenario específico por número de línea**
 ```bash
 behave features/login.feature:5
+
+```
+### **Ejecutar con reporte html**
+
+- primero descargar la dependencia:
+```bash
+pip install behave selenium behave-html-formatter
+
 ```
 
+- luego ejecutar el siguiente comando en cmd:
+```bash
+behave -f html -o reports/behave-report.html
 
+
+```
 
 ---
 
@@ -184,5 +197,8 @@ class LoginPage(BasePage):
 ## **📝 Autor y Contribuciones**
 - **👨‍💻 Daniel David Cardona**
 - Repositorio creado para prueba qa automatizador
+- link resporte de bugs: https://www.notion.so/Seguimiento-de-bugs-inlaze-1a6baf1db86d806794b7d012ee8938ad?pvs=4
+- link casos de prueba: https://www.notion.so/Reto-automatizaci-n-inlaze-ebf81068e30146f3bb5317dd9460bd02?pvs=4
+- video resumen proyecto: https://youtu.be/SVgGKlJbvI8
 
 
