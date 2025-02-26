@@ -1,12 +1,14 @@
 Feature: Logging
+@smoke
 Scenario: Successful logging
     Given the user is on the login page
     When the user enters "prueba12@gmail.com" as username
     And the user enters "*Prueba123" as password
     And the user clicks the login button
     Then the user should be redirected to the dashboard
-  
-  Scenario: incorrect email
+
+@smoke
+Scenario: incorrect email
     Given the user is on the login page
     When the user enters "prueba12" as username
     And the user enters "*Prueba123" as password
